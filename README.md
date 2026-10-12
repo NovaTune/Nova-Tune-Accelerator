@@ -1,0 +1,157 @@
+[README_GitHub.md](https://github.com/user-attachments/files/33358144/README_GitHub.md)
+# Nova Tune Accelerator
+
+**Optimized · Accelerated · Perfected**
+
+Nova Tune Accelerator is a portable Windows optimization utility built for competitive gamers and performance-focused users. It brings system cleanup, latency-minded tweaks, monitoring, power plans, game profiles, bulk app installs, and a guided checklist into one dark, streamlined toolkit.
+
+> **Windows 10 / 11** · Single `.exe` · Run as Administrator for full features
+
+---
+
+## Features
+
+### Guided setup
+- **Optimization Checklist** — step-by-step Windows gaming setup you can check off and save
+- **Safe Autos** — apply a curated set of low-risk settings with an optional restore point
+- **Presets** — *Nova Minimal*, *Nova Safe*, *Nova Competitive*
+
+### Apps & system
+- **Apps** — install or uninstall popular software via winget (browsers, Discord, Steam, utilities, and more)
+- **Debloat** — remove unnecessary AppX packages (with confirmation)
+- **Startup Manager** — disable Run-key startup programs
+- **Power Plans** — switch performance-oriented power schemes
+- **Windows Update helpers** — open Settings / apply cautious policy modes
+- **System Health** — restore points, temp cleanup, SFC/DISM guidance, NanaZip & HWiNFO install
+
+### Performance & gaming
+- **Live Monitoring** — CPU and GPU stats (NVIDIA via `nvidia-smi` when available)
+- **Benchmarks** — quick local CPU and GPU scores for before/after comparison
+- **Ascension** — temporary game mode that closes selected background processes; optional launch-with-game
+- **Game Profiles** — competitive-oriented guidance and profile helpers
+- **GPU panel** — monitoring notes and safe overclock *guidance* (not forced OC)
+- **Classic context menu** — restore the Windows 10-style right-click menu on Windows 11
+
+### Network, notes, settings
+- **Network** — ping tests, DNS flush, Winsock/TCP helpers
+- **Session Notes** — log before/after FPS and feel
+- **Settings** — theme (dark/light/system), start page, safety toggles, export/import, GitHub update check
+- **About** — product info and contact
+
+### Tweaks
+- Essential and Advanced registry tweaks
+- **Apply / Undo selected** (tracked by Nova Tune)
+- Export / import full setup (preferences, checklist, notes, applied tweaks)
+
+---
+
+## Download
+
+Get the latest portable build from **[Releases](https://github.com/NovaTune/Nova-Tune-Accelerator/releases)**.
+
+| File | Description |
+|------|-------------|
+| `NovaTune_vX.Y.Z.exe` | Portable app — no installer required |
+
+---
+
+## Quick start
+
+1. Download the latest `NovaTune_v*.exe` from Releases  
+2. Right-click → **Run as administrator**  
+3. Start on the **Checklist** (recommended on a fresh Windows install)  
+4. Create a **System Restore Point** before major changes  
+5. Apply **Nova Safe** under **Optimize → Tweaks** when ready  
+
+### Build from source (optional)
+
+```text
+1. Install Python 3.11 or 3.12 from python.org (check "Add to PATH")
+2. Extract this repository / source zip
+3. Run build.bat
+4. Find the exe in dist\NovaTune_vX.Y.Z.exe
+```
+
+Dependencies (installed by `build.bat`): `customtkinter`, `psutil`, `Pillow`, `pywin32`, `WMI`, `pyinstaller`
+
+---
+
+## Recommended first-time path (stock Windows)
+
+1. Install GPU and chipset drivers  
+2. Run Nova Tune as Administrator  
+3. System Health → restore point (or rely on preset restore)  
+4. Checklist + Safe Autos  
+5. Optimize → Tweaks → **Nova Safe**  
+6. Apps → install what you need  
+7. Monitor / Network / Games as needed  
+8. Reboot and test your games  
+
+**Note:** On already-tuned systems (e.g. Atlas OS), many optimizations are already applied, so changes may appear smaller. Stock Windows is the best test environment.
+
+---
+
+## Safety
+
+- Prefer **Nova Safe** before Advanced or Competitive presets  
+- Use **Undo selected / Undo all** for tweaks Nova has applied and recorded  
+- Undo is **not** a full OS rollback — use System Restore for that  
+- Debloat and service changes can affect apps you still need — read prompts carefully  
+- GPU overclock guidance is informational; hardware risk stays with you  
+- Limiting Windows Update can reduce security exposure protection — re-enable when appropriate  
+
+---
+
+## Updates
+
+In **Settings → Updates**, the app can check  
+[github.com/NovaTune/Nova-Tune-Accelerator/releases](https://github.com/NovaTune/Nova-Tune-Accelerator/releases)  
+for a newer version and open the download page.
+
+Default repository: `NovaTune/Nova-Tune-Accelerator`
+
+---
+
+## Project layout (source)
+
+```text
+NovaTune/
+├── main.py              # App entry
+├── build.bat            # One-click PyInstaller build
+├── build.spec
+├── requirements.txt
+├── assets/              # Icon
+├── modules/             # UI tabs (checklist, apps, hubs, …)
+└── utils/               # Theme, safety, presets, preferences, version
+```
+
+---
+
+## Roadmap ideas
+
+- More winget apps and tweak definitions  
+- Stronger per-tweak undo coverage  
+- Optional Pro / paid unlock (not enabled yet)  
+- Continued gaming-focused profiles and monitoring  
+
+Feedback from real machines (especially fresh Windows installs) drives the next builds.
+
+---
+
+## Contact
+
+| | |
+|--|--|
+| **Email** | novatuneoap@gmail.com |
+| **Phone** | 702-763-2985 |
+| **GitHub** | [NovaTune/Nova-Tune-Accelerator](https://github.com/NovaTune/Nova-Tune-Accelerator) |
+
+---
+
+## Disclaimer
+
+Nova Tune Accelerator modifies Windows settings and can remove software components when you choose those actions. Use at your own risk. Always keep backups or restore points. The authors are not responsible for data loss, instability, or hardware issues. This software is provided as-is, without warranty of any kind.
+
+---
+
+*Nova Tune Accelerator — Optimized · Accelerated · Perfected*
